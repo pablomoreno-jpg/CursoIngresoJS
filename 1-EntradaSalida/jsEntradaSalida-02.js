@@ -8,6 +8,6 @@ function mostrar()
 
     nombre=prompt ("ingrese su nombre:") 
 
-	alert("ok");
+	alert("muy bien");
 }
 
