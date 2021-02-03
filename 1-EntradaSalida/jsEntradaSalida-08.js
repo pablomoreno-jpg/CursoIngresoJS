@@ -15,7 +15,7 @@ function SacarResto()
 	var resultado;
 
 
-	resultado=dividendo % divisor;
+	resultado = dividendo % divisor;
 
 
 	alert("el resto es: " + resultado);
