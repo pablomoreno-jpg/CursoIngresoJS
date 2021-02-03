@@ -5,42 +5,42 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var a = parseInt(txtIdNumeroUno.value)  
-	var b = parseInt(txtIdNumeroDos.value)	
+	var primernumero = parseInt(txtIdNumeroUno.value)  
+	var segundonumero = parseInt(txtIdNumeroDos.value)	
 
-	var c = a + b 
+	var suma = primernumero + segundonumero
 
-	alert(c)
+	alert("el resultado de la suma es: " + suma)
 }
 
 function restar()
 {
-	var a = parseInt(txtIdNumeroUno.value)  
-	var b = parseInt(txtIdNumeroDos.value)
+	var primernumero = parseInt(txtIdNumeroUno.value)  
+	var segundonumero = parseInt(txtIdNumeroDos.value)
+	
+	var restar = primernumero - segundonumero 
 
-	var c = a -b
-
-	alert(c)
+	alert("el resultado de la resta es: " + restar )
 	
 }
 
 function multiplicar()
 { 
-	var a = parseInt(txtIdNumeroUno.value)  
-	var b = parseInt(txtIdNumeroDos.value)
+	var primernumero = parseInt(txtIdNumeroUno.value)  
+	var segundonumero = parseInt(txtIdNumeroDos.value)
 
-	var c = a * b
+	var multiplicar = primernumero * segundonumero
 
-	alert(c)
+	alert("el resulrado es: " + multiplicar )
 }
 
 function dividir()
 {
-	var a = parseInt(txtIdNumeroUno.value)  
-	var b = parseInt(txtIdNumeroDos.value)
+	var primernumero = parseInt(txtIdNumeroUno.value)  
+	var segundonumero = parseInt(txtIdNumeroDos.value)
 
-	var c = a / b 
+	var dividir = primernumero / segundonumero
 
-	alert(c)
+	alert("el resultado es: " + dividir)
 }
 

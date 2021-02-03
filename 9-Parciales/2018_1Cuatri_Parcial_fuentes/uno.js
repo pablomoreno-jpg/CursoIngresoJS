@@ -1,17 +1,35 @@
 
 function mostrar()
 {
+	//variables strim del largo y ancho del rectangulo:
 	var ancho;
-	var largo; 
-	var perimetro;
+	var largo;
 
-	ancho = prompt("ingrese el largo");
-	largo = prompt("ingrese el ancho");
+	//promt de las variables 
 
-	var suma = ancho + largo; 
+	ancho = prompt("ingrese su ancho: ");
+	largo = prompt("ingrese su largo: "); 
 
-	alert(suma);
+	//parceable de los datos anteriores 
 
-	
+	var numeroparceadoancho = parseInt(ancho);
+	var numeroparceadolargo = parseInt(largo);
+
+	//operaciones 
+
+	var sumadelosparceados = numeroparceadoancho + numeroparceadolargo;
+	var resultadofianal = sumadelosparceados * 2 
+
+	alert("el perimetro de su rectangulo es: " + resultadofianal);
+
+
+
+
+
+
+
+
+
+
 
 }
