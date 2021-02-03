@@ -15,16 +15,4 @@ function mostrarAumento()
 	resultado = sueldoparceado * 1,10
 
 	txtIdResultado.value = resultado
-
-
-
-	
-	
-
-	
-
-
-
-
-    
 }
