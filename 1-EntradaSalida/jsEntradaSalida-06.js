@@ -10,6 +10,6 @@ function sumar()
 	var suma = numero1 + numero2;
 
 
-	alert(suma);
+	alert("el resultado de la suma es: " + suma);
 }
 
