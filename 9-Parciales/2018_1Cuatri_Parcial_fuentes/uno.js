@@ -18,18 +18,7 @@ function mostrar()
 	//operaciones 
 
 	var sumadelosparceados = numeroparceadoancho + numeroparceadolargo;
-	var resultadofianal = sumadelosparceados * 2 
+	var resultadofianal = sumadelosparceados * 2; 
 
 	alert("el perimetro de su rectangulo es: " + resultadofianal);
-
-
-
-
-
-
-
-
-
-
-
 }
