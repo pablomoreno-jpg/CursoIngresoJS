@@ -12,7 +12,7 @@ function mostrarAumento()
 	sueldostrim = txtIdSueldo.value;
 	sueldoparceado = parseInt(sueldostrim);
 
-	resultado = sueldoparceado * 1,10
+	resultado = sueldoparceado * 1,10 
 
 	txtIdResultado.value = resultado
 }
