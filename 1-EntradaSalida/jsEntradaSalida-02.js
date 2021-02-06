@@ -10,6 +10,6 @@ function mostrar()
     nombre=prompt ("ingrese su nombre:") 
     
     //mostrar 
-	alert("muy bien");
+	alert("muy bien, su nombre es " + nombre);
 }
 
