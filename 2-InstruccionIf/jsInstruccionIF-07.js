@@ -12,9 +12,9 @@ function mostrar()
 
 	edad = parseInt(edad);
 
-	if(edad < 18 && Ecivil != "soltero")
+	if(edad < 18 && Ecivil != "Soltero")
 	{
-		alert("usted es demasiado pequeño para no ser soltero")
+		alert("usted es demasiado joven para no ser soltero");
 	}
 
 }//FIN DE LA FUNCIÓN
