@@ -13,7 +13,7 @@ function mostrar()
 
 	alert(nota);
 
-	if(nota >= 9)
+	if(nota >= 10)
 	{
 		alert("EXCELENTE");
 	}

@@ -15,9 +15,8 @@ function CalcularPrecio ()
     var marca;  
     var precio; 
     var preciofinal;
-    var aumento; 
-    var precioIIBB; 
-
+    var descuento;
+   
     marca = Marca.value
     
     lamparitas = txtIdCantidad.value;
@@ -26,85 +25,72 @@ function CalcularPrecio ()
 
     lamparitastotales = lamparitas *35 
 
-    if( lamparitas > 5 )
+    if( lamparitas == 6 )
     {
-        precio = lamparitastotales * 50 / 100;
+        descuento = 50 
+        
+        precio = lamparitastotales * descuento / 100;
         preciofinal = lamparitastotales - precio; 
 
         txtIdprecioDescuento.value  = preciofinal
     }
     else{
-        if( lamparitas < 6 && marca == "ArgentinaLuz" )
+        if(lamparitas == 5 )
         {
-            precio = lamparitastotales * 40 / 100; 
-            preciofinal= lamparitastotales - precio ;
-
-            txtIdprecioDescuento.value = preciofinal;
-        }
-        else{
-            if(lamparitas < 6 && marca != "ArgentinaLuz" )
+            if( marca == "ArgentinaLuz")
             {
-                precio = lamparitastotales * 30 / 100;
-                preciofinal = lamparitastotales - precio; 
-
-                txtIdprecioDescuento.value = preciofinal;
+                descuento = 40 
+                
+                precio = lamparitastotales * descuento / 100;
+                preciofinal = lamparitastotales - precio;
             }
-            else{
-                if(lamparitas < 5 && marca == "ArgentinaLuz" || marca == "FelipeLamparas")
-                {
-                    precio = lamparitastotales * 25 / 100; 
-                    preciofinal = lamparitastotales - precio;
+            else
+            {
+                descuento = 30 
 
-                    txtIdprecioDescuento.value = preciofinal;
-                }
-                else{
-                    if(lamparitas < 5 && marca != "ArgentinaLuz" || marca != "FelipeLamparas")
-                    {
-                        precio = lamparitastotales * 20 / 100; 
-                        preciofinal = lamparitastotales - precio;
-
-                        txtIdprecioDescuento.value = preciofinal;
-                    }
-                    else{
-                       if(lamparitas < 4 && marca == "ArgentinaLuz") 
-                       {
-                           precio = lamparitastotales * 15 / 100; 
-                           preciofinal = lamparitastotales - precio;
-
-                           txtIdprecioDescuento.value = preciofinal;
-                       }
-                       else{
-                           if(lamparitas < 4 && marca == "FelipeLamparas")
-                           {
-                               precio = lamparitastotales * 10 / 100;
-                               preciofinal = lamparitastotales - precio;
-
-                               txtIdprecioDescuento.value = preciofinal;
-                           }
-                           else{
-                               if(lamparitas < 4 && marca != "FelipeLamparas" || marca != "ArgentinaLuz")
-                               {
-                                   precio = lamparitastotales * 5 / 100;
-                                   preciofinal = lamparitastotales - precio;
- 
-                                   txtIdprecioDescuento.value = preciofinal;
-                               }
-                           }
-                       }
-                    }
-                }
+                precio = lamparitastotales * descuento / 100;
+                preciofinal = lamparitastotales - precio;
             }
         }
+        else
+        {
+            if(lamparitas == 4)
+            {
+                if(marca == "ArgentinaLuz" || marca == "“FelipeLamparas”")
+                {
+                    descuento = 25 
+
+                    precio = lamparitastotales * descuento / 100;
+                    preciofinal = lamparitastotales - precio;
+                }
+                else
+                {
+                    descuento = 20 
+
+                    precio = lamparitastotales * descuento / 100;
+                    preciofinal = lamparitastotales - precio;
+                }
+            }
+            else
+            {
+                if(lamparitas == 3)
+                {
+                    if(marca == "ArgentinaLuz")
+                    {
+                        descuento = 15 
+
+                        precio = lamparitastotales * descuento / 100;
+                        preciofinal = lamparitastotales - precio;
+                    }
+                    else
+                    {
+                        if(marca == "“FelipeLamparas”")
+                        {
+                            
+                        }
+                    }
+                }
+            }        
+        }    
     }
-    if( preciofinal >= 120 )
-    {
-        aumento = preciofinal * 10 / 100;
-        precioIIBB = preciofinal + aumento;
-
-        alert("usted pago " + precioIIBB + " de " + preciofinal);
-        txtIdprecioDescuento.value = precioIIBB;
-    }
-
-    
-
 }

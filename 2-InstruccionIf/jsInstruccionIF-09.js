@@ -4,11 +4,11 @@ function mostrar()
 {
 	var numero;
 
-	numero = Math.random() * 100; 
-
+	numero = Math.random() * 100;
+	
 	numero = parseInt(numero);
 
-	if( numero < 10)
+	if( numero < 11)
 	{
 		alert(numero);
 	}
