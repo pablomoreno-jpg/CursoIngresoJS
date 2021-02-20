@@ -8,7 +8,7 @@ function mostrar()
 {
 	var mesdelaño;
 
-	mesdelaño =  txtIdMes.value
+	mesdelaño =  txtIdMes.value;
 
 	switch(mesdelaño)
 	{

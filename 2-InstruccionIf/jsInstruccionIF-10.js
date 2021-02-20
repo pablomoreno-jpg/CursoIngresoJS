@@ -1,11 +1,8 @@
 /*
-Al presionar el Botón, asignar una nota RANDOM al examen y mostrar:
-"EXCELENTE" para notas igual a 9 o 10,
-"APROBÓ" para notas mayores a 4,
-"Vamos, la proxima se puede" para notas menores a 4*/
+*/
 function mostrar()
 {
-	var nota;
+    /*var nota;
 
 	nota = Math.random() * 10; 
 
@@ -26,6 +23,56 @@ function mostrar()
 		{
 			alert("la proxima se puede");
 		}
-	}	
+	}*/	
+
+/*
+on if
+pedir a una persoan que fue de vaciones , la distancia que viajo y el tiempo que tardo, para calcular la velocidad
+e informar:
+60 km/hr = muy lento
+hata 80km/h= lento
+hasta 100= buen ritmo
+hasta 120= ahi de la ley
+mas = eso no se hace*/
+	
+	var distancia;
+	var tiempo;
+	var velocidad; 
+
+	distancia = prompt("¿que distancia recorio?");
+	tiempo = prompt("¿cuanto tardo?");
+
+	distancia = parseFloat(distancia);
+	tiempo = parseFloat(tiempo);
+
+	velocidad = distancia / tiempo;
+
+	alert(velocidad);
+
+	if(distancia <= 60)
+	{
+		alert( "muy lento");
+	}
+	else{
+		if(velocidad <= 80)
+		{
+			alert("lento");
+		}
+		else{
+			if(velocidad <= 100)
+			{
+				alert("buen ritmo");
+			}
+			else{
+				if(velocidad <= 120)
+				{
+					alert("ahi la ley");
+				}
+				else{
+					alert("eso no se hace");
+				}
+			}
+		}
+	}
 
 }//FIN DE LA FUNCIÓN
