@@ -1,23 +1,17 @@
 function mostrar()
 {
 
-	var miArray = new Array();
+	var miArray = []
 
-	for (var i = 0; i <5; i++)
-	{
-		miArray[i]=parseInt(prompt("Ingrese un numero"));
+	for( var i = 0; i < 5; i++){
+
+		miArray[i] = parseInt(prompt("ingrese un numero"));
+
 	}
 
+	for(var i = 0; i < 5; i++){
 
-
-	for(var i=0; i<5; i++)
-	{
-
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
+		console.log(miArray[i]);
 	}
-
-
-
-
 
 }//FIN DE LA FUNCIÓN

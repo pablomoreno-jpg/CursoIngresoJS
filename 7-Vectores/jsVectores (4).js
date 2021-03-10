@@ -1,28 +1,17 @@
 function mostrar()
 {
+	var miArray = []
+	var sumatoria;
 
-	var miArray = new Array();
-	var acum=0;
-	for (var i = 0; i <5; i++)
-	{
-		miArray[i]=parseInt(prompt("Ingrese un numero"));
-		acum+=miArray[i];
+	for(var i = 0; i < 4 ; i++){
 
-	}
-
-
-
-	for(var i=0; i<5; i++)
-	{
-
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
-
+		miArray[i] = parseInt(prompt("ingres algu numero"));
 
 	}
+	for(var i = 0; i < 4 ; i++){
 
-	document.write("<h1> La suma de todos los numeros es: "+acum+"</h1>")
-
-
-
-
+		miArray.push(sumatoria);
+		console.log(miArray[i]);
+	}
+	
 }//FIN DE LA FUNCIÓN
